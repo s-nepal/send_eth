@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
 	while(1){
 		if (sendto(sockfd, sendbuf, tx_len, 0, (struct sockaddr*)&socket_address, sizeof(struct sockaddr_ll)) < 0)
 	    	printf("Send failed\n");
-	    usleep(200);
+	    usleep(400);
 	}
 
 	return 0;
